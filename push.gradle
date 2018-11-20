@@ -19,6 +19,17 @@ android {
         multiDexEnabled true
         applicationId = doExtractStringFromManifest("package")
     }
+     compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+       }
+        allprojects {
+            compileOptions {
+                sourceCompatibility = JavaVersion.VERSION_1_7
+                targetCompatibility = JavaVersion.VERSION_1_7
+            }
+        }
+    
 }
 
 buildscript {
